@@ -75,6 +75,7 @@ public with sharing class WidgetIsProperlyNestedSendEmailBatchTest {
                                     EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
                                     LocaleSidKey='en_US', ProfileId = standardProfile.Id, 
                                     TimeZoneSidKey='Europe/London', UserName='standardusertestqwe@testorg.com');
+        insert standardUser;
         return standardUser;
     }
 }

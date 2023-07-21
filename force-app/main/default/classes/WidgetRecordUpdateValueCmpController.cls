@@ -3,7 +3,7 @@ public with sharing class WidgetRecordUpdateValueCmpController {
     public static Boolean isUserSystemAdminOrWidgetMaster() {
         Id profileId=userinfo.getProfileId();
         String profileName=[Select Id,Name from Profile where Id=:profileId].Name;
-        if(profileName== 'Widget Masters' || profileName== 'System Administrator'){
+        if(profileName == 'Widget Masters' || profileName== 'System Administrator'){
             return true;
         }
         return false;
